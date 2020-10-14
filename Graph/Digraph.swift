@@ -33,4 +33,16 @@ class Digraph {
         
         return children
     }
+    
+    func hasVertex(_ vertex: Vertex) -> Bool {
+        return (self.edges[vertex] != nil)
+    }
+    
+    func getVertex(_ vertex: Vertex) -> Vertex? {
+        if self.edges.keys.contains(vertex) {
+            return vertex
+        } else {
+            return nil
+        }
+    }
 }

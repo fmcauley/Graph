@@ -85,4 +85,36 @@ class DigraphTests: XCTestCase {
         XCTAssertEqual(output.count, expected)
         
     }
+    
+    func testThatNoChildrenArePresentWhenThereIsOneVertexAndNotEdgesAreAdded() {
+        let digraph = Digraph()
+        let vertex = Vertex(withValue: "Sting")
+        let output  = digraph.childrenOf(vertex).count
+        let expectedCount = 0
+        XCTAssertEqual(output, expectedCount)
+    }
+    
+    func testThatADigraphCanCheckIfItHasAVertex() {
+        let digraph = Digraph()
+        let vertex = Vertex(withValue: "Run the Jewels")
+        digraph.addVertext(vertex)
+        let output = digraph.hasVertex(vertex)
+        XCTAssertTrue(output)
+    }
+    
+    func testThatADigraphDoesNotHaveAVertex() {
+        let digraph = Digraph()
+        let vertex = Vertex(withValue:"Descendents")
+        XCTAssertFalse(digraph.hasVertex(vertex))
+    }
+    
+    func testThatAVertexInTheDigraphCanBereturnedByValue() {
+        let digraph = Digraph()
+        let vertex = Vertex(withValue: "Bad Brains")
+        digraph.addVertext(vertex)
+        let output = digraph.getVertex(vertex)
+        let expected = "Bad Brains"
+        
+        XCTAssertEqual(output?.value, expected)
+    }
 }
