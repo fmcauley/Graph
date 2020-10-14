@@ -17,12 +17,13 @@ class Vertex : CustomStringConvertible, Hashable {
         hasher.combine(value)
     }
     
-    var description: String = "**Vertex**"
+    var description: String = ""
     
     var value : String
     //for now will refactor to be generic
     
     init(withValue: String) {
         self.value = withValue
+        description =  "**Vertex** -- \(value)"
     }
 }

@@ -57,7 +57,9 @@ class DigraphTests: XCTestCase {
         let edge = Edge(source, destination)
         digraph.addEdge(edge)
         
+        let output = digraph.edges[edge.source]?.first
         
-        //XCTAssertEqual(digraph.edges[source], destination)
+        XCTAssertEqual(output?.value, "Black Flag")
+        
     }
 }
