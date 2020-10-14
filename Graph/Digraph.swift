@@ -24,4 +24,13 @@ class Digraph {
             edges[edge.source]?.append(edge.destination)
         }
     }
+    
+    func childrenOf(_ vertex: Vertex) -> [Vertex] {
+        var children = [Vertex]()
+        if let value = self.edges[vertex] {
+            children = value
+        }
+        
+        return children
+    }
 }

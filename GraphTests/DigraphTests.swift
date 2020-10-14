@@ -60,6 +60,29 @@ class DigraphTests: XCTestCase {
         let output = digraph.edges[edge.source]?.first
         
         XCTAssertEqual(output?.value, "Black Flag")
+    }
+    
+    func testThatADigraphKnowsItsNumberOfChildren() {
+        let digraph = Digraph()
+        let source = Vertex(withValue: "Minor Threat")
+        let destination = Vertex(withValue: "Fuguzi")
+        let destination2 = Vertex(withValue: "DRI")
+        
+        digraph.addVertext(source)
+        digraph.addVertext(destination)
+        digraph.addVertext(destination2)
+        
+        let edge1 = Edge(source, destination)
+        let edge2 = Edge(source, destination2)
+        
+        digraph.addEdge(edge1)
+        digraph.addEdge(edge2)
+        
+        let output = digraph.childrenOf(source)
+        
+        let expected = 2
+        
+        XCTAssertEqual(output.count, expected)
         
     }
 }
