@@ -117,4 +117,20 @@ class DigraphTests: XCTestCase {
         
         XCTAssertEqual(output?.value, expected)
     }
+    
+    func testThatAVertextCanBeReturnedByValue() {
+        let digraph = Digraph()
+        let vertex = Vertex(withValue: "Black Sabbath")
+        digraph.addVertext(vertex)
+        let output = digraph.getVertexByValue("Black Sabbath")
+        
+        XCTAssertEqual(output, vertex)
+        
+    }
+    
+    func testThatGivenAValueThatIsNotPresentInTheDigraphTheValueIsNil() {
+        let digraph = Digraph()
+        let output = digraph.getVertexByValue("Black Sabbath")
+        XCTAssertNil(output)
+    }
 }

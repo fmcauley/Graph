@@ -45,4 +45,8 @@ class Digraph {
             return nil
         }
     }
+    
+    func getVertexByValue(_ value: String) -> Vertex? {
+        return self.edges.keys.filter{$0.value == value}.first
+    }
 }
