@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0792771253688FA006937A1 /* VertexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0792770253688FA006937A1 /* VertexTests.swift */; };
+		F079277625368944006937A1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079277525368944006937A1 /* Vertex.swift */; };
+		F079278225368CDE006937A1 /* EdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079278125368CDE006937A1 /* EdgeTests.swift */; };
+		F079278725368D17006937A1 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079278625368D17006937A1 /* Edge.swift */; };
+		F079278825368D17006937A1 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079278625368D17006937A1 /* Edge.swift */; };
+		F079278F253691AB006937A1 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F079277525368944006937A1 /* Vertex.swift */; };
+		F0792794253691DB006937A1 /* DigraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0792793253691DB006937A1 /* DigraphTests.swift */; };
+		F07927992536920F006937A1 /* Digraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07927982536920F006937A1 /* Digraph.swift */; };
+		F079279A2536920F006937A1 /* Digraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07927982536920F006937A1 /* Digraph.swift */; };
 		F0AAAA002531E5BD00C8B14E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAA9FF2531E5BD00C8B14E /* AppDelegate.swift */; };
 		F0AAAA022531E5BD00C8B14E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AAAA012531E5BD00C8B14E /* ViewController.swift */; };
 		F0AAAA042531E5BF00C8B14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AAAA032531E5BF00C8B14E /* Assets.xcassets */; };
@@ -33,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0792770253688FA006937A1 /* VertexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertexTests.swift; sourceTree = "<group>"; };
+		F079277525368944006937A1 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F079278125368CDE006937A1 /* EdgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeTests.swift; sourceTree = "<group>"; };
+		F079278625368D17006937A1 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		F0792793253691DB006937A1 /* DigraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigraphTests.swift; sourceTree = "<group>"; };
+		F07927982536920F006937A1 /* Digraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digraph.swift; sourceTree = "<group>"; };
 		F0AAA9FC2531E5BD00C8B14E /* Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AAA9FF2531E5BD00C8B14E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AAAA012531E5BD00C8B14E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +117,9 @@
 				F0AAAA052531E5BF00C8B14E /* Main.storyboard */,
 				F0AAAA082531E5BF00C8B14E /* Info.plist */,
 				F0AAAA092531E5BF00C8B14E /* Graph.entitlements */,
+				F079277525368944006937A1 /* Vertex.swift */,
+				F079278625368D17006937A1 /* Edge.swift */,
+				F07927982536920F006937A1 /* Digraph.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -111,6 +129,9 @@
 			children = (
 				F0AAAA122531E5BF00C8B14E /* GraphTests.swift */,
 				F0AAAA142531E5BF00C8B14E /* Info.plist */,
+				F0792770253688FA006937A1 /* VertexTests.swift */,
+				F079278125368CDE006937A1 /* EdgeTests.swift */,
+				F0792793253691DB006937A1 /* DigraphTests.swift */,
 			);
 			path = GraphTests;
 			sourceTree = "<group>";
@@ -255,6 +276,9 @@
 			files = (
 				F0AAAA022531E5BD00C8B14E /* ViewController.swift in Sources */,
 				F0AAAA002531E5BD00C8B14E /* AppDelegate.swift in Sources */,
+				F07927992536920F006937A1 /* Digraph.swift in Sources */,
+				F079278725368D17006937A1 /* Edge.swift in Sources */,
+				F079277625368944006937A1 /* Vertex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AAAA132531E5BF00C8B14E /* GraphTests.swift in Sources */,
+				F079279A2536920F006937A1 /* Digraph.swift in Sources */,
+				F0792771253688FA006937A1 /* VertexTests.swift in Sources */,
+				F079278225368CDE006937A1 /* EdgeTests.swift in Sources */,
+				F0792794253691DB006937A1 /* DigraphTests.swift in Sources */,
+				F079278F253691AB006937A1 /* Vertex.swift in Sources */,
+				F079278825368D17006937A1 /* Edge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
